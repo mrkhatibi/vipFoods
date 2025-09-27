@@ -1,0 +1,96 @@
+.resturantCard {
+  background: rgba(255, 99, 71, 0.08);
+  border: 1px solid rgba(255, 99, 71, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 650px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.resturantCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 99, 71, 0.25);
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: tomato;
+  text-align: center;
+}
+
+.info {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.label {
+  color: tomato;
+  min-width: 110px;
+  font-weight: 600;
+}
+
+
+.postsWrapper {
+  margin: 2rem auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.postLink {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.postLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 99, 71, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .resturantCard {
+    padding: 1rem;
+    margin: 1rem ;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    font-size: 0.95rem;
+  }
+
+  .postsWrapper {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    flex-direction: column; 
+    align-items: flex-start;
+    font-size: 0.9rem;
+  }
+
+  .label {
+    min-width: auto;
+  }
+}

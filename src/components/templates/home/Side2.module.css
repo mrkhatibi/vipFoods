@@ -1,0 +1,45 @@
+.container{
+    position: relative;
+}
+
+.imagewrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.floatwrap{
+ display: inline-block;
+  perspective: 1000px;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  right: 200px;
+}
+
+.float{
+display: block;
+  border-radius: 12px;
+  filter: drop-shadow(0 28px 40px rgba(243, 110, 22, 0.733));
+  transform-origin: center;
+  animation: floaty 3.5s ease-in-out infinite;
+  will-change: transform;
+  transition: all 0.25s ease;
+}
+@media (max-width : 450px) {
+    .imagewrapper{
+        width: 350px;
+    }
+    .image {
+        width: 350px;
+        height: 300px;
+        
+    }
+    .searchbox{
+      margin-top: -100px;
+    }
+}

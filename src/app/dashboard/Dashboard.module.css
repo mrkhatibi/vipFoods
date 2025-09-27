@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg , rgb(224, 114, 114) , rgb(207, 83, 83) , rgb(77, 12, 12));
+  border-radius: 10px;
+}
+.container a {
+  text-decoration: none;
+}
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+
+.ownericon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ownerdivs, .userdivs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.ownerdivs div,
+.userdivs div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ownerdivs div:hover,
+.userdivs div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+}
+
+.ownerdivs h3,
+.userdivs h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #444;
+}

@@ -1,0 +1,20 @@
+.allcontainer h3{
+    text-align: center;
+    margin: 10;
+    font-size: xxx-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10;
+    padding: 15;
+    background: linear-gradient(135deg , rgb(121, 57, 57),red , black);
+    color: white;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: 10px auto;
+    display: flex;
+    gap: 30;
+    flex-wrap: wrap;
+    justify-content: center;
+}

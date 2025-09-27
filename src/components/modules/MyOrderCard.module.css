@@ -1,0 +1,93 @@
+.card {
+  background: rgba(255, 99, 71, 0.05); /* شیشه‌ای سبک */
+  border: 1px solid rgba(255, 99, 71, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 99, 71, 0.2);
+}
+
+.preview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.previewItem,
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(255, 99, 71, 0.2);
+}
+
+.foodImage {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.foodName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.foodPrice,
+.foodQuantity {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.total {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: tomato;
+}
+
+.toggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: tomato;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggleBtn:hover {
+  background: #ff4500;
+  box-shadow: 0 4px 10px rgba(255, 99, 71, 0.4);
+}
