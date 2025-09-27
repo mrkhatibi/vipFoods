@@ -32,11 +32,11 @@ function Searchfood() {
           <FcSearch />
         </button>
       </form>
-      <h3>
+      <h2 className={styles.text}>
         Looking for something delicious? Just type the name of any dish you have
         in mind, and we’ll search through all our available meals to find it for
         you.
-      </h3>
+      </h2>
     </div>
   );
 }

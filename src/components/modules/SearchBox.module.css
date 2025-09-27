@@ -6,7 +6,7 @@
 
 }
 
-.searchBox h3 {
+.text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #ffffff;
@@ -16,6 +16,7 @@
   border-radius: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .searchForm {
   display: flex;
