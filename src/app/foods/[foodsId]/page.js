@@ -22,7 +22,7 @@ function FoodsId() {
   if (userLoading) return <Loader />;
   const foodDetails = data.find((item) => item._id === foodsId);
   const orderSearch = orderData.find(
-    (item) => item?.foodDetails._id === foodsId && item.userId === userData._id
+    (item) => item?.foodDetails._id === foodsId && item.userId === userData?._id
   );
 
   const orderHandler = async () => {
@@ -63,8 +63,7 @@ function FoodsId() {
           <p>Created: {new Date(foodDetails.createdAt).toLocaleDateString()}</p>
           <p>Updated: {new Date(foodDetails.updatedAt).toLocaleDateString()}</p>
         </div>
-
-        <div className={styles.actions}>
+          {!userData ? <div>To place an order, please log in to your account first</div> : <div className={styles.actions}>
           {userData.role === "OWNER" ? null : (
             <>
               {!orderSearch || orderSearch.quantity === 0 ? (
@@ -113,7 +112,8 @@ function FoodsId() {
           >
             Back
           </button>
-        </div>
+        </div>}
+        
       </div>
     </div>
   );

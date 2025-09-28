@@ -76,7 +76,7 @@ function AddFood() {
               </div>
             ))}
           </div>
-          <input className={styles.fileInput} type="file" name="image" />
+<input className={styles.fileInput} type="file" name="image" accept="image/*" />
           <button className={styles.button} type="submit">
             submit
           </button>
